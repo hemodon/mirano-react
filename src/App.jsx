@@ -3,8 +3,7 @@ import { Footer } from './modules/Footer/Footer';
 import { Goods } from './modules/Goods/Goods';
 import { Header } from './modules/Header/Header';
 import { Hero } from './modules/Hero/Hero';
-import { OrderForm } from './modules/OrderForm/OrderForm';
-import { OrderMsg } from './modules/OrderMsg/OrderMsg';
+import { Order } from './modules/Order/Order';
 import { Subscribe } from './modules/Subscribe/Subscribe';
 
 export const App = () => {
@@ -18,8 +17,7 @@ export const App = () => {
         <Subscribe />
       </main>
       <Footer />
-      <OrderForm />
-      <OrderMsg />
+      <Order />
     </>
   );
 };

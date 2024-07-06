@@ -1,18 +1,14 @@
+import style from './CartItem.module.scss';
+
 export const CartItem = ({ img, title, price }) => (
-  <li className='cart__item'>
-    <img className='cart__img' src={img} alt={title} />
-    <h4 className='cart__item-title'>{title}</h4>
-    <div className='cart__counter'>
-      <button className='cart__counter-btn'>-</button>
-      <input
-        className='cart__counter-input'
-        type='number'
-        max='99'
-        min='0'
-        value='1'
-      />
-      <button className='cart__counter-btn'>+</button>
+  <li className={style.item}>
+    <img className={style.img} src={img} alt={title} />
+    <h4 className={style.title}>{title}</h4>
+    <div className={style.counter}>
+      <button className={style.btn}>-</button>
+      <input className={style.input} type='number' max='99' min='0' value='1' />
+      <button className={style.btn}>+</button>
     </div>
-    <p className='cart__price'>{price}&nbsp;₽</p>
+    <p className={style.price}>{price}&nbsp;₽</p>
   </li>
 );
